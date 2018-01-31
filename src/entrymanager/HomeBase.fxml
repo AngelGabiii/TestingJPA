@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="entrymanager.HomeBaseController">
+   <top>
+      <Pane prefHeight="53.0" prefWidth="1300.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="520.0" layoutY="9.0" prefHeight="27.0" prefWidth="234.0" style="-fx-text-fill: rgb(255, 255, 255);" text="Data Entry" textAlignment="CENTER" textFill="#f8f3f3">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children></Pane>
+   </top>
+   <left>
+      <Pane prefHeight="606.0" prefWidth="118.0" style="-fx-background-color: rgb(111, 44, 111);" BorderPane.alignment="CENTER" />
+   </left>
+   <bottom>
+      <Pane prefHeight="41.0" prefWidth="1300.0" style="-fx-background-color: rgb(128,128,128);" BorderPane.alignment="CENTER" />
+   </bottom>
+   <right>
+      <Pane prefHeight="606.0" prefWidth="11.0" style="-fx-background-color: rgb(0,0,0);" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Group layoutX="649.0" layoutY="153.0">
+               <children>
+                  <Label layoutY="133.0" text="Enter Username :" />
+                  <Label layoutY="186.0" text="Enter Password:" />
+                  <Label layoutY="246.0" text="Email:" />
+                  <TextField fx:id="username2Tx" layoutX="127.0" layoutY="129.0" prefHeight="25.0" prefWidth="227.0" promptText="Enter Username" />
+                  <PasswordField fx:id="password2Tx" layoutX="127.0" layoutY="182.0" prefHeight="25.0" prefWidth="228.0" promptText="Enter password" />
+                  <TextField fx:id="email2Tx" layoutX="127.0" layoutY="229.0" prefHeight="25.0" prefWidth="227.0" promptText="Email" />
+                  <Button fx:id="scanFingerPrint2Btn" layoutX="127.0" layoutY="274.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="228.0" text="Scan Finger Print" />
+                  <Button fx:id="uploadImage2Btn" layoutX="127.0" layoutY="312.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="228.0" text="Upload Image" />
+                  <ImageView fitHeight="120.0" fitWidth="221.0" layoutX="127.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="imageView2Area" fitHeight="132.0" fitWidth="200.0" layoutX="127.0" layoutY="-63.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Group>
+            <Separator layoutX="523.0" layoutY="88.0" orientation="VERTICAL" prefHeight="443.0" prefWidth="0.0" />
+            <Button fx:id="submitBtn" layoutX="268.0" layoutY="519.0" mnemonicParsing="false" text="Submit" />
+            <Group layoutX="76.0" layoutY="153.0">
+               <children>
+                  <Label layoutY="133.0" text="Enter Username :" />
+                  <Label layoutY="186.0" text="Enter Password:" />
+                  <Label layoutY="246.0" text="Email:" />
+                  <TextField fx:id="usernameTx" layoutX="127.0" layoutY="129.0" prefHeight="25.0" prefWidth="227.0" promptText="Enter Username" />
+                  <PasswordField fx:id="passwordTx" layoutX="127.0" layoutY="182.0" prefHeight="25.0" prefWidth="228.0" promptText="Enter password" />
+                  <TextField fx:id="emailTx" layoutX="127.0" layoutY="229.0" prefHeight="25.0" prefWidth="227.0" promptText="Email" />
+                  <Button fx:id="scanFingerPrintBtn" layoutX="127.0" layoutY="274.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="228.0" text="Scan Finger Print" />
+                  <Button fx:id="uploadImageBtn" layoutX="127.0" layoutY="312.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="228.0" text="Upload Image" />
+                  <ImageView fx:id="imageViewArea" fitHeight="120.0" fitWidth="221.0" layoutX="127.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Group>
+            <Button fx:id="editAndSubmitBtn" layoutX="859.0" layoutY="519.0" mnemonicParsing="false" text="Edit and Save" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
